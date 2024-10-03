@@ -8,10 +8,5 @@ Route::get('/', function () {
 });
 
 route::get('alumnos',function(){
-    $alumno= new Alumno();
-
-    $alumno->nombre= 'Marcos';
-    $alumno->save();
-
-    return $alumno;
+    return view('alumnos');
 });
